@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
             float movX = Input.GetAxis("Horizontal");
             float movY = Input.GetAxis("Vertical");
 
-            rig.velocity = new Vector2(movX, movY) * speed;
+            rig.linearVelocity = new Vector2(movX, movY) * speed;
         }
     }
 
